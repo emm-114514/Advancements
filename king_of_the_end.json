@@ -1,0 +1,43 @@
+{
+  "parent": "activities:challenges/root",
+  "criteria": {
+    "king_of_the_end": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:killed",
+                "stat": "minecraft:ender_dragon",
+                "value": {
+                  "min": 20
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "杀死20只末影龙",
+      "color":"#21497B"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "minecraft:dragon_head"
+    },
+    "title": {
+      "translate": "末地之王（可能不只有一位）"
+    }
+  },
+  "requirements": [
+    [
+      "king_of_the_end"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
