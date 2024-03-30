@@ -1,0 +1,41 @@
+{
+  "parent": "activities:challenges/root",
+  "criteria": {
+    "killed_piglin_brute": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:piglin_brute",
+              "location": {
+                "dimension": "minecraft:the_end"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "从下界救出一只猪灵蛮兵，将其安全地带到末地......然后干掉它",
+      "color":"gold"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "minecraft:golden_axe"
+    },
+    "title": {
+      "translate": "强大的同盟"
+    }
+  },
+  "requirements": [
+    [
+      "killed_piglin_brute"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
