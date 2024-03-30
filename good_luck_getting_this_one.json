@@ -1,0 +1,49 @@
+{
+  "parent": "activities:challenges/root",
+  "criteria": {
+    "good_luck_getting_this_one": {
+      "trigger": "minecraft:killed_by_crossbow",
+      "conditions": {
+        "victims": [
+          {
+            "type": "minecraft:endermite",
+            "location": {
+              "dimension": "the_end"
+            }
+          },
+          {
+            "type": "minecraft:zombie",
+            "location": {
+              "dimension": "overworld"
+            }
+          },
+          {
+            "type": "minecraft:piglin",
+            "location": {
+              "dimension": "the_nether"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "用一根穿透箭分别杀死处于末地的末影螨、处于主世界的僵尸、处于下界的猪灵",
+      "color":"#9A5CC6"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "minecraft:crossbow"
+    },
+    "title": {
+      "translate": "跨越三界"
+    }
+  },
+  "requirements": [
+    [
+      "good_luck_getting_this_one"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
