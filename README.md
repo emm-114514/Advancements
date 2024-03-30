@@ -1,2 +1,3 @@
-# Advancements
-Minecraft Advancements
+# 进度
+Minecraft进度
+注：所有进度仅适用于minecraft1.20.5之前的版本，1.20.5之后（1.21）进度格式更改。
